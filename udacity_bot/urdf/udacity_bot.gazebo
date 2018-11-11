@@ -19,6 +19,9 @@
       <odometrySource>world</odometrySource>
       <odometryFrame>odom</odometryFrame>
       <robotBaseFrame>robot_footprint</robotBaseFrame>
+      <publishWheelTF>false</publishWheelTF>
+      <publishWheelJointState>false</publishWheelJointState>
+      <publishTf>false</publishTf>
     </plugin>
   </gazebo>
 

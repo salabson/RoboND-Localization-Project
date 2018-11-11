@@ -13,8 +13,31 @@
     <wheelDiameter>0.2</wheelDiameter>
     <robotBaseFrame>base_link</robotBaseFrame>
     <torque>20</torque>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <rosDebugLevel>na</rosDebugLevel>
+    <odometrySource>world</odometrySource>
+    <odometryFrame>odom</odometryFrame>
+    <robotBaseFrame>robot_footprint</robotBaseFrame>
+    <legacyMode>false</legacyMode>
+    <publishWheelTF>false</publishWheelTF>
+    <publishWheelJointState>false</publishWheelJointState>
+    <publishTf>false</publishTf>
+    <covariance_x>0.0001</covariance_x>
+    <covariance_y>0.0001</covariance_y>
+    <covariance_yaw>0.01</covariance_yaw>
     <topicName>cmd_vel</topicName>
     <broadcastTF>false</broadcastTF>
+  </plugin>
+</gazebo>
+
+<gazebo name="object_controller" filename="libgazebo_ros_planner_move.so">
+  <plugin>
+    <commandTopic>cmd_vel</commandTopic>
+    <odometryTopic>odom</odometryTopic>
+    <odometryFrame>odom</odometryFrame>
+    <odometryRate>20.0</odometryRate>
+    <robotBaseFrame>robot_footprint</robotBaseFrame>
   </plugin>
 </gazebo>
 
