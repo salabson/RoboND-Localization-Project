@@ -1,7 +1,6 @@
  
-  
+controller_frequency: 10.0
 TrajectoryPlannerROS:
-  controller_frequency: 10.0
   holonomic_robot: false
   pdist_scale: 0.6
   meter_scoring: true
