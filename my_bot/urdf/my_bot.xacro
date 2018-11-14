@@ -84,7 +84,7 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
-      </material name="black">
+      <material name="black"/>
     </visual>
      
      <collision name='front_right_wheel_collision'>
@@ -120,7 +120,7 @@
   
   
    <!-- back  left wheel model -->
-  <link name="backt_left_wheel">
+  <link name="back_left_wheel">
   	 <visual name='back_left_wheel_visual'>
       <origin xyz="0 0 0" rpy=" 0 1.5707 1.5707"/>
       <geometry>
@@ -162,7 +162,7 @@
       <geometry>
         <cylinder radius="0.1" length="0.05"/>
       </geometry>
-      </material name="black">
+      <material name="black"/>
     </visual>
      
      <collision name='back_right_wheel_collision'>
@@ -228,7 +228,7 @@
   	 <visual name='hokuyo_visual'>
       <origin xyz="0 0 0" rpy=" 0 0 0"/>
       <geometry>
-        <mesh filename="package://udacity_bot/meshes/hokuyo.dae"/>
+        <mesh filename="package://my_bot/meshes/hokuyo.dae"/>
       </geometry>
       
     </visual>
@@ -255,5 +255,6 @@
   	<origin xyz=".15 0 0.1" rpy="0 0 0" />
     <parent link="chassis" />
     <child link="hokuyo" />
+    <axis xyz="1 0 0" rpy="0 0 0"/>
   </joint>
 </robot>

@@ -204,5 +204,6 @@
   	<origin xyz=".15 0 0.1" rpy="0 0 0" />
     <parent link="chassis" />
     <child link="hokuyo" />
+    <axis xyz="1 0 0" rpy="0 0 0"/>
   </joint>
 </robot>
